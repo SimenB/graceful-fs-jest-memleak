@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "jest": "^25.2.3",
+    "patch-package": "^6.2.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

@@ -1,0 +1,12 @@
+diff --git a/node_modules/graceful-fs/graceful-fs.js b/node_modules/graceful-fs/graceful-fs.js
+index 8c75ee2..95f5797 100644
+--- a/node_modules/graceful-fs/graceful-fs.js
++++ b/node_modules/graceful-fs/graceful-fs.js
+@@ -33,6 +33,7 @@ else if (/\bgfs4\b/i.test(process.env.NODE_DEBUG || ''))
+ 
+ // Once time initialization
+ if (!global[gracefulQueue]) {
++  console.log('Patching fs!');
+   // This queue can be shared by multiple loaded instances
+   var queue = []
+   Object.defineProperty(global, gracefulQueue, {
